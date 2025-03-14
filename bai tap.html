@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bai tap</title>
+</head>
+<body>
+<form method="get" action="bai tap.html">
+    <table>
+        <h2>Chuong trinh tinh vay lai ngan hang</h2>
+        <tr>
+        <input type="text" id="rentmoney" name="rentmoney" placeholder="Nhap so tien vay" value=""/>
+        <input type="text" id="interest" name="interest" placeholder="Nhap lai xuat" value=""/>
+        <input type="text" id="time" name="time" placeholder="Nhap so nam vay" value=""/>
+
+        </tr>
+    </table>
+    <input type="button" onclick="tinhToan()" value="Tinh so tien lai phai tra"/>
+    </form>
+    </body>
+</html>
+
+<script>
+   let rentmoney = +document.getElementById("rentmoney").value;
+   let interest = +document.getElementById("interest").value;
+   let time = +document.getElementById("time").value;
+    function tinhToan() {
+        let result = (rentmoney * (interest/100) * (time*12))
+        document.write("Tong lai phai tra la:"+ result);
+    }
+</script>
+
+
+
+</body>
+</html>
