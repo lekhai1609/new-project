@@ -21,14 +21,16 @@
 </html>
 
 <script>
-   let rentmoney = +document.getElementById("rentmoney").value;
-   let interest = +document.getElementById("interest").value;
-   let time = +document.getElementById("time").value;
+
     function tinhToan() {
+        let rentmoney = +document.getElementById("rentmoney").value;
+        let interest = +document.getElementById("interest").value;
+        let time = +document.getElementById("time").value;
         let result = (rentmoney * (interest/100) * (time*12))
         document.write("Tong lai phai tra la:"+ result);
     }
 </script>
+
 
 
 
